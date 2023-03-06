@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "nodemon src/index.ts",
     "build": "tsc --build",
-    "start": "npm run build && npm run build-client && npm run build-db && node .",
+    "prod": "npm run build && npm run build-client && npm run build-db",
     "build-client": "prisma generate",
     "build-db": "test ! -f prisma/data.db && prisma db push && echo 'New DB File generated' || echo 'DB File exists'"
   },
