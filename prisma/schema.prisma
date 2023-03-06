@@ -7,12 +7,13 @@ generator client {
 
 datasource db {
   provider = "sqlite"
-  url      = "file:./data/data.db"
+  url      = "file:./data.db"
 }
 
 
 model Waifu {
-  id     Int     @id @default(autoincrement())
-  link    String?
-  createdAt DateTime @default(now())
+  id        Int         @id @default(autoincrement())
+  name      String
+  link      String
+  createdAt DateTime    @default(now())
 }
