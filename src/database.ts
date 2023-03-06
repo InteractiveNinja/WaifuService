@@ -20,4 +20,12 @@ export class WaifuDatabase {
             return []
         })
     }
+
+    public getRandom() {
+        return this.getAll().then(waifus => {
+            const randomIndex = Math.floor(Math.random() * waifus.length)
+            return waifus[randomIndex];
+        })
+    }
+
 }
