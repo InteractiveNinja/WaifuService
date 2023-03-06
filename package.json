@@ -2,10 +2,13 @@
   "name": "waifuservice",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "dev": "nodemon src/index.ts",
-    "build": "tsc --build"
+    "build": "tsc --build",
+    "start": "npm run build && npm run build-client && npm run build-db && node .",
+    "build-client": "prisma generate",
+    "build-db": "test ! -f prisma/data.db && prisma db push && echo 'New DB File generated' || echo 'DB File exists'"
   },
   "keywords": [],
   "author": "",
