@@ -1,0 +1,1 @@
+INSERT INTO Waifu (id, name, link, createdAt) VALUES (1, 'Megumin', 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.redd.it%2Fzb2thj06j3h31.jpg&f=1&nofb=1&ipt=4bfe3f43938d050589c2cabc40b9eebe6cbaf3a10205e2985f956ad6a8d62e60&ipo=images', '2023-03-06 13:03:33');
